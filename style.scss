@@ -1,0 +1,40 @@
+body{
+    margin: 0px;
+    background: linear-gradient(115.13deg, rgba(22, 0, 195, 0.41) 4.52%, #1600C3 104.31%);
+}
+
+.logo {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto auto 50px auto;
+}
+
+.sticky{
+    background: black;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    margin: auto auto 50px auto;
+}
+
+.text-sticky {
+    color: white;
+    font-size: 14pt;
+    font-family: 'Poppins SemiBold';
+    margin: auto;    
+}
+
+.big-p {
+    text-align: center;
+    margin: auto auto 50px auto;
+    font-size: 14pt;
+    font-family: 'Poppins SemiBold';
+    color: white;
+}
+
+.social-media {
+    text-align: center;
+    margin: auto auto 50px auto;
+}
