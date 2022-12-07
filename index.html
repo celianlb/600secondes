@@ -4,16 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img\600secondeslogo.png" type="image/x-icon">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GTQRTGFFPW"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());    
-      gtag('config', 'G-GTQRTGFFPW');
-    </script>
+    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon">
     <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
@@ -32,64 +27,180 @@
     /></noscript>
     <title>600secondes</title>
 </head>
-<body>
-    <div class="sticky">
-        <span class="text-sticky">Pensez à fermer cette page et tous vos onglets inutiles quand vous avez fini !</span>
-    </div>
-    <div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#section1">LES CHIFFRES</a></li>
-                <li><a href="#section2">NOTRE ACTION</a></li>
-                <li><a href="#section3">CONSEILS</a></li>
-                <li><a href="#section4">VOTRE AVIS COMPTE !</a></li>
-                <li><a href="#section5">SIMULEZ VOTRE EMPREINTE CARBONE</a></li>
-            </ul>
-        </nav>
-    </div>
+<body>     
+    <div class="container1"></div>
+    <header>
+      <img class="top-img-mobil" src="./img/top-img-mobil.svg" alt="image-haut-de-page-mobil">
+      <img class="top-img-dekstop" src="./img/top-img.svg" alt="image-haut-de-page-dekstop">
+      <a href="/"><img class="logo-dekstop" src="./img/600secondes-logo-white.svg" alt=""></a>
+      <a href="/"><img class="logo-mobil" src="./img/600secondes-logo-white-mobil.svg" alt=""></a>
+      <input type="checkbox" id="menyAvPaa">
+      <label id="burger" for="menyAvPaa">
+          <div></div>
+          <div></div>
+          <div></div>
+      </label>
+      <nav id="meny">
+        <ul>
+          <li><a href="#chiffres">CHIFFRES</a></li>
+          <li><a href="#action">ACTION</a></li>
+          <li><a href="#conseils">CONSEILS</a></li>
+          <li><a href="#avis">AVIS</a></li>
+          <li><a href="#simulateur">SIMULATEUR</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <!-- SECTION 1 LES CHIFFRES -->
-    <div id="section1">        
-    </div>
-
-    <!-- SECTION 2 NOS ACTIONS -->
-    <div id="section2">        
-    </div>
-
-    <!-- SECTION 3 CONSEILS -->
-    <div id="section3">        
-    </div>
-
-    <!-- SECTION 4 VOTRE AVIS COMPTE -->
-    <div id="section4">        
-    </div>
-
-    <!-- SECTION 5 SIMULEZ VOTRE EMPREINTE CARBONNE -->
-    <div id="section5">        
-    </div>
-
-
+    <!-- SECTION 0 -->
+    <section class="section0">
+      <div class="p-left">
+          <h1 class="title1">La sobriété numérique c'est quoi ?</h1>
+        <p>
+          Cela représente une utilisation modérée du numérique, avec pour finalité la protection de l’environnement ! Les réseaux sociaux, notamment, font partie des moins bons élèves... et leurs algorithmes n’aident pas à ce que tu décroches.
+        </p>  
+        <p class="paragraph-bold">
+          Simule dès maintenant ton empreinte carbone liée à ton usage des réseaux sociaux !
+        </p>
+        <button type="button" class="button1 btn"><a href="#section5">Je simule !</a></button>
+      </div>
+    </section>
     
-    <img class="logo" src="img\600secondeslogo.png" alt="600secondeslogo">    
-    <p class="big-p">Le site web est en cours de construction !</p>    
-    <div class="social-media">
-        <a href="https://www.instagram.com/600.secondes/" target="_blank">
-            <img src="img\icons8-instagram.svg" alt="reseau-social-instagram">
-        </a>
-        <a href="https://www.tiktok.com/@600secondes?_t=8XepJMn8DET&_r=1" target="_blank">
-            <img src="img\icons8-tic-tac.svg" alt="reseau-social-twitter">
-        </a>
-    </div>
-    
+    <!-- SECTION 1 -->
+    <section id="section1">      
+      <div class="p-center paragraph-bold">   
+        <div class="container2">
+          <h1 class="title2" id="chiffres">Quelques chiffres sur la consommation</h1>
+        </div>
+        <ul>
+          <li>
+            <h2>5 minutes</h2>
+            <p>d’utilisation de Tiktok par jour c’est <span class="span-pink">4,8 kg de CO2 émis par an</span></p>
+          </li>
+          <li>
+            <h2>500 heures</h2>
+            <p>de <span class="span-pink">vidéos uploadées</span> sur Youtube/min = <span class="span-pink">600 kg de CO2 émis</span></p>
+          </li>
+          <li>
+            <h2>102 kg</h2>
+            <p>de <span class="span-pink">CO2</span> sont émis par chaque utilisateur de <span class="span-pink">réseaux sociaux mobile par an</span></p>         
+          </li>
+        </ul>        
+      </div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section id="section2">
+      <div class="p-center">
+        <div class="container3">
+          <h1 class="title2 mobil" id="action">pourquoi faut-il réduire notre consommation des réseaux sociaux ?</h1>
+        </div>
+        <ul>
+          <li>
+            <img src="./img/pollution-img.svg" alt="image-pollution" class="pollution-img">
+          </li>
+          <li class="consommation">
+            <h1 class="title2 dekstop">pourquoi faut-il réduire notre consommation des réseaux sociaux ?</h1>
+            <img src="./img/pink-smiley.svg" alt="happy-blue-smiley" class="smiley">
+            <p>En plus d’être hyper énergivores, <span class="span-bold">nous prennent notre temps et nous absorbent.</span> Nous devenons donc le produit, et <span class="span-bold">produit qui pollue.</span></p>
+            <h1 class="title2">ce que tu peux faire</h1>
+            <img src="./img/blue-smiley.svg" alt="sad-pink-smiley" class="smiley">
+            <p>Nous te proposons de <span class="span-pink">réduire de 10 minutes ta consommation de Tiktok par jour !</span> Ce n’est qu’une faible partie du temps que tu passes dessus, et ça te permettra <span class="span-bold">d’émettre 57 kilos de CO2 par an en moins,</span> soit l’équivalent de <span class="span-bold">560km parcourus en voiture !</span></p>
+          </li>
+        </ul>        
+      </div>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section id="section3">
+      <div class="container4">
+        <h1 class="title2" id="conseils">Conseils pour combler tes 10 minutes en moins sur les réseaux sociaux</h1>
+      </div>   
+      <div class="slider">
+        <img src="./img/slider/slider1.svg" alt="conseil-numero-1">
+        <img src="./img/slider/slider2.svg" alt="conseil-numero-2">
+        <img src="./img/slider/slider3.svg" alt="conseil-numero-3">
+        <img src="./img/slider/slider4.svg" alt="conseil-numero-4">
+        <img src="./img/slider/slider5.svg" alt="conseil-numero-5">
+        <img src="./img/slider/slider6.svg" alt="conseil-numero-6">
+      </div>
+    </section>
+
+    <!-- SECTION 4 -->
+    <section id="section4">
+      <div class="p-center">
+        <div class="container5">
+          <h1 class="title2" id="avis">Vidéo de sensibilisation</h1>
+        </div> 
+        <iframe src="https://www.youtube.com/embed/I5LpydATMyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h1 class="title2">Donne nous ton avis !</h1>
+        <p>Tu es convaincu.e ? Si oui, n’hésite pas à nous faire part du positif qu’une <span class="span-bold">utilisation moindre des réseaux sociaux</span> a pu avoir dans ta vie !</p>
+        <a href="https://forms.gle/6EhVwbs7xZH9BB8A8 " target="_blank"><button type="button" class="btn">Je donne mon avis !</button></a>
+      </div>
+    </section>
+
+    <!-- SECTION 5 -->
+    <section id="section5">
+      <div class="p-section5">
+        <div class="container6">
+          <h1 class="title2" id="simulateur">Simule dès maintenant ton empreinte carbone !</h1>
+        </div>      
+        <ul>        
+          <li class="consommation">
+            <p class="span-bold">Simule dès maintenant ton empreinte carbone liée à ton usage des réseaux sociaux !</p>
+            <p class="paragraph-bold"><span class="span-pink">ENTRE TON TEMPS D'ÉCRAN</span> EN HEURE</p>
+            <section class="result">
+              
+              <div class="wrapper">    
+                  <button id="btnDecrement" onclick="decrementCounter()">-</button>
+                  <span id="compteur3">0</span>
+                  <button id="btnIncrement" onclick="incrementCounter()">+</button>  
+              </div>              
+              <div class="inline1">
+                <p class="text1">TU PRODUIS</p>
+                <div id="compteur1"></div>
+                <p class="text1">KG DE CO2 PAR AN</p>
+              </div>
+             <div class="inline2">
+                <p class="text2">SOIT L'ÉQUIVALENT DE </p>
+                <div id="compteur2"></div>
+                <p class="text2"> KM PARCOURUS EN VOITURE</p>
+              </div>
+            </section>
+          </li>
+          <li>
+            <img src="./img/simulation-img.svg" alt="image-simulation" class="simulation-img">
+          </li>
+        </ul>
+      </div>
+      
+    </section>
+
+    <!-- SECTION 6 -->
+    <section id="section6" class="section-margin">
+      <div class="p-center">
+        <h1 class="title2">Plus d'informations ?</h1>
+        <p>Téléchargez notre <span class="span-bold">kit presse</span> pour avoir plus d'informations !</p>
+        <a href="https://drive.google.com/file/d/1N4EFc43jnlbfA2nLLLBUyxTNx6obwlHJ/view?usp=share_link" target="_blank"><button class="btn" type="button">Téléchargez !</button></a>
+      </div>
+    </section>
+
+    <section class="sect">
+      <footer>
+        <p>Retrouve-nous sur Instagram et Tiktok...</p>
+        <a href="https://www.instagram.com/600.secondes/" target="_blank"><img src="./img/instagram-logo-pink.svg" alt="logo-instagram"></a>
+        <a href="https://www.tiktok.com/@600secondes" target="_blank"><img src="./img/tiktok-logo-pink.svg" alt="logo-tiktok" class="img"></a>        
+        <p>mais surtout,  passe un moment avec tes amis, ta famille, ou ton animal de compagnie !</p>
+        <img src="./img/600secondes-logo-pink.svg" alt="logo-rose">
+        <p>by octopus</p>
+      </footer>
+    </section>
     
 
-    <!-- BOUTTON BACK TO TOP-->
-    <div id="scroll_to_top">
-        <a href="#top"></a>
-    </div>
-    
+
+
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
 </body>
-<footer>
-
-</footer>
 </html>
