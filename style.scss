@@ -564,7 +564,7 @@ iframe {
   }
 
   #section5{
-    margin-bottom: -30%;
+
     ul{
       display: flex;
       margin-right: 60px;
@@ -573,9 +573,9 @@ iframe {
       padding: 50px;
     }
     .simulation-img{
-      margin-left: 70%;
-      text-align: right;
-      margin-top: -200px;
+      float: right;
+      margin-top: -50%;
+      margin-bottom: -80%;
     }
     .p-section5{
       p{

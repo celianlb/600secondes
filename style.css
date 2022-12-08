@@ -431,20 +431,18 @@ iframe {
   #section4 button {
     margin-bottom: -200px; }
 
-  #section5 {
-    margin-bottom: -30%; }
-    #section5 ul {
-      display: flex;
-      margin-right: 60px; }
-    #section5 li {
-      padding: 50px; }
-    #section5 .simulation-img {
-      margin-left: 70%;
-      text-align: right;
-      margin-top: -200px; }
-    #section5 .p-section5 p {
-      text-align: left;
-      width: max-content; } }
+  #section5 ul {
+    display: flex;
+    margin-right: 60px; }
+  #section5 li {
+    padding: 50px; }
+  #section5 .simulation-img {
+    float: right;
+    margin-top: -50%;
+    margin-bottom: -80%; }
+  #section5 .p-section5 p {
+    text-align: left;
+    width: max-content; } }
 @media only screen and (max-width: 768px) {
   #section2 .dekstop {
     display: none; }
